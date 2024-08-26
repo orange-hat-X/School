@@ -395,12 +395,7 @@ QPushButton:checked{
 }</string>
             </property>
             <property name="text">
-             <string/>
-            </property>
-            <property name="icon">
-             <iconset resource="resources.qrc">
-              <normaloff>:/icons/dashboard2.png</normaloff>
-              <normalon>:/icons/dashboard1.png</normalon>:/icons/dashboard2.png</iconset>
+             <string>Encrypt application</string>
             </property>
             <property name="iconSize">
              <size>
@@ -470,12 +465,7 @@ QPushButton:checked{
              <item>
               <widget class="QPushButton" name="student_2">
                <property name="text">
-                <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="resources.qrc">
-                 <normaloff>:/icons/students3.png</normaloff>
-                 <normalon>:/icons/students4.png</normalon>:/icons/students3.png</iconset>
+                <string>Password Manager</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -509,7 +499,7 @@ QPushButton:hover{
 }</string>
                   </property>
                   <property name="text">
-                   <string>Student İnformation</string>
+                   <string>Password İnformation</string>
                   </property>
                   <property name="checkable">
                    <bool>true</bool>
@@ -1041,8 +1031,8 @@ QPushButton:checked{
          <widget class="QStackedWidget" name="stackedWidget">
           <property name="geometry">
            <rect>
-            <x>10</x>
-            <y>10</y>
+            <x>30</x>
+            <y>-20</y>
             <width>901</width>
             <height>721</height>
            </rect>
@@ -1104,7 +1094,7 @@ QPushButton:checked{
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>191</width>
+              <width>271</width>
               <height>61</height>
              </rect>
             </property>
@@ -1116,7 +1106,7 @@ QPushButton:checked{
              </font>
             </property>
             <property name="text">
-             <string>Student İnfo</string>
+             <string>Password Manager</string>
             </property>
            </widget>
            <widget class="QLabel" name="label_19">
@@ -1136,15 +1126,15 @@ QPushButton:checked{
              </font>
             </property>
             <property name="text">
-             <string>Welcome to the students information page</string>
+             <string>Welcome to the password manager page</string>
             </property>
            </widget>
            <widget class="QTableWidget" name="studentinfo_table">
             <property name="geometry">
              <rect>
-              <x>0</x>
+              <x>-11</x>
               <y>220</y>
-              <width>950</width>
+              <width>961</width>
               <height>501</height>
              </rect>
             </property>
@@ -1164,56 +1154,31 @@ QTableWidget{
             </property>
             <column>
              <property name="text">
-              <string>Name</string>
+              <string>Account Name</string>
              </property>
             </column>
             <column>
              <property name="text">
-              <string>Student id</string>
+              <string>Password id</string>
              </property>
             </column>
             <column>
              <property name="text">
-              <string>Gender</string>
+              <string>Special Characters</string>
              </property>
             </column>
             <column>
              <property name="text">
-              <string>Class</string>
+              <string>Security Level</string>
              </property>
             </column>
             <column>
              <property name="text">
-              <string>Birthday</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Age</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Address</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Phone</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Email</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Actions</string>
+              <string>Date</string>
              </property>
             </column>
            </widget>
-           <widget class="QWidget" name="">
+           <widget class="QWidget" name="layoutWidget">
             <property name="geometry">
              <rect>
               <x>0</x>
@@ -1242,7 +1207,7 @@ QTableWidget{
 }</string>
                </property>
                <property name="text">
-                <string>Add Student</string>
+                <string>Add Password</string>
                </property>
                <property name="icon">
                 <iconset resource="resources.qrc">
@@ -1306,12 +1271,12 @@ QTableWidget{
              </item>
             </layout>
            </widget>
-           <widget class="QWidget" name="">
+           <widget class="QWidget" name="layoutWidget">
             <property name="geometry">
              <rect>
               <x>0</x>
               <y>160</y>
-              <width>561</width>
+              <width>551</width>
               <height>43</height>
              </rect>
             </property>
@@ -1340,17 +1305,17 @@ QTableWidget{
                </property>
                <item>
                 <property name="text">
-                 <string>SELECT GENDER</string>
+                 <string>Spacial Characters</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>Male</string>
+                 <string>Yes</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>Female</string>
+                 <string>No</string>
                 </property>
                </item>
               </widget>
@@ -1379,67 +1344,22 @@ QTableWidget{
                </property>
                <item>
                 <property name="text">
-                 <string>SELECT CLASS</string>
+                 <string>Select Security Level</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>Grade 1</string>
+                 <string>Level 1</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>Grade 2</string>
+                 <string>Level 2</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>Grade 3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Grade 4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Grade 5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Grade 6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Grade 7</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Grade 8</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Grade 9</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Grade 10</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Grade 11</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Grade 12</string>
+                 <string>Level 3</string>
                 </property>
                </item>
               </widget>
@@ -1466,7 +1386,7 @@ QTableWidget{
 }</string>
                </property>
                <property name="placeholderText">
-                <string>Search Student...</string>
+                <string>Search Password...</string>
                </property>
               </widget>
              </item>
