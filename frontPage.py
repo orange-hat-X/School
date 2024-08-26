@@ -353,3 +353,6 @@ class DoubleButtonWidgetStudents(QWidget):
             self.mydb.close()
             
             self.sidebar.reload_Studentstable_data()
+            
+    def develop():
+        pass
