@@ -71,7 +71,7 @@ QComboBox{
     <rect>
      <x>20</x>
      <y>10</y>
-     <width>241</width>
+     <width>271</width>
      <height>31</height>
     </rect>
    </property>
@@ -83,7 +83,7 @@ QComboBox{
     </font>
    </property>
    <property name="text">
-    <string>Add New Student</string>
+    <string>Add New Password</string>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget">
@@ -92,7 +92,7 @@ QComboBox{
      <x>30</x>
      <y>90</y>
      <width>501</width>
-     <height>401</height>
+     <height>411</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -106,7 +106,7 @@ QComboBox{
          </font>
         </property>
         <property name="text">
-         <string>Full Name</string>
+         <string>Password Name</string>
         </property>
        </widget>
       </item>
@@ -134,7 +134,7 @@ QComboBox{
            </font>
           </property>
           <property name="text">
-           <string>Select Gender</string>
+           <string>Spacial Characters</string>
           </property>
          </widget>
         </item>
@@ -142,12 +142,12 @@ QComboBox{
          <widget class="QComboBox" name="gender_comboBox">
           <item>
            <property name="text">
-            <string>Male</string>
+            <string>Yes</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>Female</string>
+            <string>No</string>
            </property>
           </item>
          </widget>
@@ -164,7 +164,7 @@ QComboBox{
            </font>
           </property>
           <property name="text">
-           <string>Select Class</string>
+           <string>Select Security Level</string>
           </property>
          </widget>
         </item>
@@ -172,110 +172,56 @@ QComboBox{
          <widget class="QComboBox" name="class_comboBox">
           <item>
            <property name="text">
-            <string>Grade 1</string>
+            <string>Level 1</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>Grade 2</string>
+            <string>Level 2</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>Grade 3</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Grade 4</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Grade 5</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Grade 6</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Grade 7</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Grade 8</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Grade 9</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Grade 10</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Grade 11</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Grade 12</string>
+            <string>Level 3</string>
            </property>
           </item>
          </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_7">
-        <item>
-         <widget class="QLabel" name="label_8">
-          <property name="font">
-           <font>
-            <pointsize>12</pointsize>
-           </font>
-          </property>
-          <property name="text">
-           <string>Date Of Birth</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QDateEdit" name="dob_dateEdit"/>
         </item>
        </layout>
       </item>
      </layout>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
-       <widget class="QLabel" name="label_3">
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
+       <widget class="QPushButton" name="saveStudent_btn_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>41</height>
+         </size>
         </property>
-        <property name="text">
-         <string>Address</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="address_lineEdit">
         <property name="maximumSize">
          <size>
-          <width>16777215</width>
-          <height>35</height>
+          <width>200</width>
+          <height>16777215</height>
          </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color: #34D481;
+	color:white;
+	border:none;
+	border-radius:8px;
+	font-weight:bold;
+	font-size:15px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Create Password</string>
         </property>
        </widget>
       </item>
@@ -291,7 +237,7 @@ QComboBox{
          </font>
         </property>
         <property name="text">
-         <string>Phone Number</string>
+         <string>Your Password</string>
         </property>
        </widget>
       </item>
@@ -317,17 +263,17 @@ QComboBox{
          </font>
         </property>
         <property name="text">
-         <string>Email</string>
+         <string>Password Security</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="email_lineEdit">
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>35</height>
-         </size>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="value">
+         <number>24</number>
         </property>
        </widget>
       </item>
@@ -364,7 +310,7 @@ QComboBox{
 }</string>
       </property>
       <property name="text">
-       <string>Add Student</string>
+       <string>Save Password</string>
       </property>
      </widget>
     </item>
